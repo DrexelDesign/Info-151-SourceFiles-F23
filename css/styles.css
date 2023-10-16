@@ -341,6 +341,17 @@ template {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.blue-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 20px 28px;
+  border-radius: 6px;
+}
+
 /* =============
     Forms
 ============= */
@@ -370,3 +381,24 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Newsletter
+============= */
+#newsletter {
+  background-color: var(--light-blue);
+}
+#newsletter h1 {
+  color: var(--blue);
+}
+#newsletter p {
+  color: var(--gray);
+}
+#newsletter form {
+  padding: 9px;
+  background-color: var(--white);
+  display: inline-block;
+  border-radius: 6px;
+}
+#newsletter form input {
+  border: none;
+}

@@ -1,0 +1,26 @@
+/* =============
+    Newsletter
+============= */
+#newsletter{
+    background-color: var(--light-blue);
+
+    h1{
+        color: var(--blue);
+    }
+
+    p{
+        color: var(--gray)
+    }
+
+    form{
+        padding: 9px;
+        background-color: var(--white);
+        // just for Week 4 demo
+        display: inline-block;
+        border-radius: 6px;
+
+        input{
+            border: none;
+        }
+    }
+}
