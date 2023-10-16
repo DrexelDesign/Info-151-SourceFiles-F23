@@ -404,9 +404,11 @@ textarea {
 }
 #newsletter h1 {
   color: var(--blue);
+  margin-bottom: 20px;
 }
 #newsletter p {
   color: var(--gray);
+  margin-bottom: 12px;
 }
 #newsletter form {
   padding: 9px;
