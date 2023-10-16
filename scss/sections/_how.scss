@@ -18,19 +18,28 @@
         li{
             // !!!! This is just for visuals for Week 4 !!!!!!
             display: inline-block;
-
-            padding: 30px;
             border-radius: 14px;
-            border: 1px solid var(--gray);
 
-            img{
-                margin-bottom: 50px;
+            background: rgb(2,0,36);
+            background: linear-gradient(132deg, rgba(2,0,36,0) 0%, rgba(6,6,64,0.15) 100%);
+            padding: 1px;
+            // border: 1px solid var(--gray);
+
+            div{
+                background-color: white;
+                border-radius: 14px;
+                padding: 30px;
+                img{
+                    margin-bottom: 50px;
+                }
+    
+                h2{
+                    color: var(--blue);
+                    margin-bottom: 10px;
+                }
             }
 
-            h2{
-                color: var(--blue);
-                margin-bottom: 10px;
-            }
+            
         }
     }
 }
