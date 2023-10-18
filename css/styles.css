@@ -13,6 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --light-blue: #ECF9FF;
+  --blue: #060640;
+  --blueDark: #000020;
+  --green: #00E5CC;
+  --gray: #9090A7;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,9 +336,28 @@ template {
 /* =============
     Base
 ============= */
+#validation-logo {
+  margin-top: 60px;
+}
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -366,3 +390,26 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  color: var(--white);
+}
+footer #footer-top {
+  background-color: var(--blue);
+  padding: 80px 0;
+}
+footer #footer-top h1 span {
+  color: var(--green);
+}
+footer #footer-top p {
+  color: var(--gray);
+}
+footer #footer-top section h2 {
+  margin-bottom: 20px;
+}
+footer #footer-bottom {
+  background-color: var(--blueDark);
+  padding: 27px 0;
+}
+footer #footer-bottom p span {
+  color: var(--green);
+}

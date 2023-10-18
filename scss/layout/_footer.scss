@@ -1,3 +1,37 @@
 /* =============
     Footer
 ============= */
+footer{
+    color: var(--white);
+   
+    #footer-top{
+        background-color: var(--blue);
+        padding: 80px 0;
+
+        h1{
+            span{
+                color: var(--green);
+            }
+        }
+        p{
+            color: var(--gray);
+        }
+
+        section{
+            h2{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    #footer-bottom{
+        background-color: var(--blueDark);
+        padding: 27px 0;
+
+        p{
+            span{
+                color: var(--green);
+            }
+        }
+    }
+}
