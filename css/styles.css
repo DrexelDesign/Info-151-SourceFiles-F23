@@ -341,6 +341,10 @@ body {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -406,6 +410,9 @@ textarea {
 header {
   background-color: var(--white);
 }
+header nav ul li a {
+  font-size: rem-cac(14);
+}
 /* =============
     Footer
 ============= */
@@ -415,8 +422,18 @@ header {
 #hero {
   margin-top: 110px;
 }
+#hero section h1 {
+  font-size: 3.125rem;
+  color: var(--blue);
+}
+#hero section ul li {
+  font-size: 0.875rem;
+}
 #hero section #hero-card {
   background-color: var(--white);
   border-radius: 14px;
   padding: 22px;
+}
+#hero section #hero-card p {
+  font-size: 0.875rem;
 }

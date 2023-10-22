@@ -5,10 +5,29 @@
     margin-top: 110px;
 
     section{
+
+        h1{
+            // font-family: 'PT Serif', serif;
+            // font-size: 50px;
+            // font-size: 2em;
+            font-size: rem-calc(50);
+            color: var(--blue)
+        }
+
+        ul{
+            li{
+                font-size: rem-calc(14);
+            }
+        }
+
         #hero-card{
             background-color: var(--white);
             border-radius: 14px;
             padding: 22px;
+
+            p{
+                font-size: rem-calc(14);
+            }
         }
     }
 }
