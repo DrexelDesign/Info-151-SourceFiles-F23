@@ -1,3 +1,53 @@
 /* =============
     Navigation
 ============= */
+
+a{
+    text-decoration: none;
+}
+
+
+nav{
+    ul{
+        display: flex;
+        justify-content: flex-end;
+
+        li{
+            list-style: none;
+            margin-left: 25px;
+            
+            a:link, a:visited{
+                color: var(--gray);
+                font-size: rem-calc(14);
+                font-weight: 600;
+                transition: 0.25s;
+            }
+
+            a:hover, a:active{
+                color: var(--green);
+            }
+
+            a.blue-link{
+                color: var(--blue);
+            }
+
+            a.blue-link:hover{
+                color: var(--green);
+            }
+
+            a.selected{
+                color: var(--green);
+            }
+        }
+
+        #sign-in-btn{
+            margin-left: auto;
+        }
+
+        
+
+        
+
+
+    }
+}

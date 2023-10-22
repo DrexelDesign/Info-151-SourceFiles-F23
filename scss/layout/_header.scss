@@ -3,20 +3,7 @@
 ============= */
 header{
     background-color: var(--white);
-
-    nav{
-        ul{
-            li{
-                a{
-                    font-size: rem-cac(14);
-                }
-            }
-
-            #trail{
-                a{
-                    
-                }
-            }
-        }
-    }
+    padding: 22px;
+    border-radius: 6px;
+    margin-top: 50px;
 }

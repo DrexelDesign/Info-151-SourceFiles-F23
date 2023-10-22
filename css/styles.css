@@ -16,6 +16,7 @@ html {
   --light-blue: #ECF9FF;
   --blue: #060640;
   --green: #00E5CC;
+  --gray: #828297;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -338,6 +339,10 @@ body {
   background-color: var(--light-blue);
 }
 
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -365,13 +370,21 @@ ul {
 ============= */
 button {
   border: none;
+  cursor: pointer;
 }
 
 .blue-btn {
   background-color: var(--blue);
-  color: var(--white);
+  color: var(--white) !important;
   padding: 20px 28px;
   border-radius: 6px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.blue-btn:hover {
+  background-color: var(--green);
+  color: var(--blue);
 }
 
 .play-btn {
@@ -379,6 +392,15 @@ button {
   border-radius: 100%;
   height: 60px;
   width: 60px;
+  color: var(--green);
+  font-size: 1.25rem;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.play-btn:hover {
+  background-color: var(--green);
+  color: var(--white);
 }
 
 /* =============
@@ -404,15 +426,55 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 25px;
+}
+nav ul li a:link, nav ul li a:visited {
+  color: var(--gray);
+  font-size: 0.875rem;
+  font-weight: 600;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--green);
+}
+nav ul li a.blue-link {
+  color: var(--blue);
+}
+nav ul li a.blue-link:hover {
+  color: var(--green);
+}
+nav ul li a.selected {
+  color: var(--green);
+}
+nav ul #sign-in-btn {
+  margin-left: auto;
+}
+
 /* =============
     Header
 ============= */
 header {
   background-color: var(--white);
+  padding: 22px;
+  border-radius: 6px;
+  margin-top: 50px;
 }
-header nav ul li a {
-  font-size: rem-cac(14);
-}
+
 /* =============
     Footer
 ============= */
@@ -426,14 +488,46 @@ header nav ul li a {
   font-size: 3.125rem;
   color: var(--blue);
 }
-#hero section ul li {
+#hero section #hero-title-container-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#hero section p {
+  margin-top: 20px;
+  color: var(--gray);
+}
+#hero section #hero-buttons {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#hero section #hero-buttons li {
   font-size: 0.875rem;
+  margin-right: 30px;
 }
 #hero section #hero-card {
   background-color: var(--white);
   border-radius: 14px;
   padding: 22px;
+  margin-top: 70px;
+}
+#hero section #hero-card #card-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#hero section #hero-card #card-status h4 {
+  margin-left: 10px;
+}
+#hero section #hero-card #card-status #card-stars {
+  margin-left: auto;
 }
 #hero section #hero-card p {
   font-size: 0.875rem;
+  margin-top: 10px;
 }
