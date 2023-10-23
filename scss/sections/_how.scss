@@ -4,15 +4,21 @@
 ============= */
 #how{
 
-    div{
+    #how-intro{
+        text-align: center;
+        margin: 108px 0 70px;
+
         h1{
             color: var(--blue);
+            font-size: rem-calc(45);
+        }
+
+        p{
+            color: var(--gray);
+            font-weight: 600;
         }
     }
 
-    p{
-        color: var(--gray);
-    }
 
     ul{
         li{
@@ -21,7 +27,7 @@
 
             padding: 30px;
             border-radius: 14px;
-            border: 1px solid var(--gray);
+            border: 1px solid var(--gray10);
 
             img{
                 margin-bottom: 50px;
@@ -30,7 +36,18 @@
             h2{
                 color: var(--blue);
                 margin-bottom: 10px;
+                font-weight: 600;
             }
+
+            p{
+                color: var(--gray);
+                font-weight: 600;
+            }
+        }
+
+        #selected{
+            border: none;
+            box-shadow: 0px 30px 50px 0px #03032510;
         }
     }
 }

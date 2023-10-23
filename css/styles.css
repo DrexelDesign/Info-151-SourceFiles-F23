@@ -17,6 +17,7 @@ html {
   --blue: #060640;
   --green: #00E5CC;
   --gray: #9090A7;
+  --gray10: #9090A710;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -335,9 +336,18 @@ template {
 /* =============
     Base
 ============= */
+#validation-btn {
+  margin-top: 50px;
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -388,17 +398,23 @@ textarea {
 /* =============
     How
 ============= */
-#how div h1 {
-  color: var(--blue);
+#how #how-intro {
+  text-align: center;
+  margin: 108px 0 70px;
 }
-#how p {
+#how #how-intro h1 {
+  color: var(--blue);
+  font-size: 2.8125rem;
+}
+#how #how-intro p {
   color: var(--gray);
+  font-weight: 600;
 }
 #how ul li {
   display: inline-block;
   padding: 30px;
   border-radius: 14px;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--gray10);
 }
 #how ul li img {
   margin-bottom: 50px;
@@ -406,4 +422,14 @@ textarea {
 #how ul li h2 {
   color: var(--blue);
   margin-bottom: 10px;
+  font-weight: 600;
+}
+#how ul li p {
+  color: var(--gray);
+  font-weight: 600;
+}
+#how ul #selected {
+  border: none;
+  -webkit-box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.062745098);
+          box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.062745098);
 }
