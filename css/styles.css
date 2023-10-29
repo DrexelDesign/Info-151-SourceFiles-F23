@@ -335,6 +335,23 @@ template {
 /* =============
     Base
 ============= */
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". main-grid-item .";
+}
+main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
+main #main-grid-item #validation-btn {
+  margin-top: 100px;
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
@@ -369,6 +386,14 @@ button {
   color: var(--white);
   padding: 20px 28px;
   border-radius: 6px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.blue-btn:hover {
+  background-color: var(--green);
+  color: var(--blue);
 }
 
 /* =============
@@ -405,21 +430,47 @@ textarea {
 ============= */
 #newsletter {
   background-color: var(--light-blue);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% auto;
+  grid-template-columns: 65% auto;
+  margin-top: 142px;
 }
-#newsletter h1 {
+#newsletter #newsletter-left-side {
+  padding: 60px;
+}
+#newsletter #newsletter-left-side #green-arch {
+  margin-left: 160px;
+  margin-bottom: -10px;
+  width: 36px;
+}
+#newsletter #newsletter-left-side h1 {
   color: var(--blue);
   margin-bottom: 20px;
 }
-#newsletter p {
+#newsletter #newsletter-left-side p {
   color: var(--gray);
   margin-bottom: 12px;
+  line-height: 1.75rem;
 }
-#newsletter form {
+#newsletter #newsletter-left-side form {
   padding: 9px;
   background-color: var(--white);
-  display: inline-block;
   border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-#newsletter form input {
+#newsletter #newsletter-left-side form input {
   border: none;
+  margin-right: auto;
+  width: 100%;
+}
+#newsletter aside {
+  background-image: url("../img/symbol.png");
+  background-size: cover;
+  background-position: left bottom;
+}
+#newsletter aside img {
+  margin-top: -80px;
 }

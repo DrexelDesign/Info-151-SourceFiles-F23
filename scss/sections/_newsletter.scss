@@ -3,26 +3,56 @@
 ============= */
 #newsletter{
     background-color: var(--light-blue);
+    display: grid;
+    grid-template-columns: 65% auto;
+    margin-top: 142px;
 
-    h1{
-        color: var(--blue);
-        margin-bottom: 20px;
+    #newsletter-left-side{
+        padding: 60px;
+
+        #green-arch{
+            margin-left: 160px;
+            margin-bottom: -10px;
+            width: 36px;
+           
+        }
+
+
+        h1{
+            color: var(--blue);
+            margin-bottom: 20px;
+        }
+    
+        p{
+            color: var(--gray);
+            margin-bottom: 12px;
+            line-height: rem-calc(28); 
+        }
+    
+        form{
+            padding: 9px;
+            background-color: var(--white);
+            // just for Week 4 demo
+            // display: inline-block;
+            border-radius: 6px;
+            display: flex;
+           
+    
+            input{
+                border: none;
+                margin-right: auto;
+                width: 100%;
+            }
+        }
     }
 
-    p{
-        color: var(--gray);
-        margin-bottom: 12px;
-    }
+    aside{
+        background-image: url("../img/symbol.png");
+        background-size: cover;
+        background-position: left bottom;
 
-    form{
-        padding: 9px;
-        background-color: var(--white);
-        // just for Week 4 demo
-        display: inline-block;
-        border-radius: 6px;
-
-        input{
-            border: none;
+        img{
+            margin-top: -80px;
         }
     }
 }

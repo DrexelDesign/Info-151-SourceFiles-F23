@@ -1,5 +1,20 @@
 /* =============
     Base
 ============= */
+main{
+    display: grid;
+    grid-template-columns: auto 1170px auto;
+    grid-template-areas: ". main-grid-item .";
 
+    #main-grid-item{
+        grid-area: main-grid-item ;
+
+        #validation-btn{
+            margin-top: 100px;
+            text-align: center;
+        }
+    }
+
+    
+}
 

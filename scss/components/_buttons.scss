@@ -10,4 +10,11 @@ button{
     color: var(--white);
     padding: 20px 28px;
     border-radius: 6px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.blue-btn:hover{
+    background-color: var(--green);
+    color: var(--blue);
 }
