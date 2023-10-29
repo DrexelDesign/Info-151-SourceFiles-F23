@@ -336,9 +336,30 @@ template {
 /* =============
     Base
 ============= */
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1170px auto;
+  grid-template-columns: auto 1170px auto;
+      grid-template-areas: ". main-content .";
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-content;
+}
+
 #validation-btn {
   margin-top: 50px;
   text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
 }
 
 /* =============
@@ -409,9 +430,16 @@ textarea {
 #how #how-intro p {
   color: var(--gray);
   font-weight: 600;
+  margin: 0 32%;
+}
+#how ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 #how ul li {
-  display: inline-block;
   padding: 30px;
   border-radius: 14px;
   border: 1px solid var(--gray10);

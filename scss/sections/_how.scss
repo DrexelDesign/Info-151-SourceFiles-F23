@@ -16,14 +16,19 @@
         p{
             color: var(--gray);
             font-weight: 600;
+            margin: 0 32%;
         }
     }
 
 
     ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+
         li{
             // !!!! This is just for visuals for Week 4 !!!!!!
-            display: inline-block;
+            // display: inline-block;
 
             padding: 30px;
             border-radius: 14px;
