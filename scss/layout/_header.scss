@@ -6,4 +6,16 @@ header{
     padding: 22px;
     border-radius: 6px;
     margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: 30% auto;
+
+    #logo-container{
+        display: flex;
+        align-items: center;
+    }
+    // for scss see navigaiton.scss file
+    // nav{
+
+    // }
 }
