@@ -1,36 +1,28 @@
 /* =============
     Hero
 ============= */
-#hero{
+#hero {
     margin-top: 110px;
+    display: grid;
+    grid-template-columns: 36% auto;
 
     section{
 
-        h1{
-            // font-family: 'PT Serif', serif;
-            // font-size: 50px;
-            // font-size: 2em;
+        h1 {
             font-size: rem-calc(50);
             color: var(--blue)
         }
 
-        #hero-title-container-top{
-
-        }
-
-        #hero-title-container-bottom{
+        #hero-title-container-bottom {
             display: flex;
-
         }
 
-        p{
+        p {
             margin-top: 20px;
             color: var(--gray);
         }
 
-       
-
-        #hero-buttons{
+        #hero-buttons {
             margin-top: 20px;
             display: flex;
             li{
@@ -39,7 +31,7 @@
             }
         }
 
-        #hero-card{
+        #hero-card {
             background-color: var(--white);
             border-radius: 14px;
             padding: 22px;
@@ -58,10 +50,18 @@
                 }
             }
 
-            p{
+            p {
                 font-size: rem-calc(14);
                 margin-top: 10px;
             }
+        }
+    }
+
+    aside {
+        img{
+            width: 100%;
+            margin-top: -90px;
+            margin-left: 50px;
         }
     }
 }

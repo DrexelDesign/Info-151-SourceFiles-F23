@@ -355,6 +355,10 @@ ul li {
   list-style: none;
 }
 
+#validation-bnt {
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
@@ -511,6 +515,10 @@ header #logo-container {
 ============= */
 #hero {
   margin-top: 110px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 36% auto;
+  grid-template-columns: 36% auto;
 }
 #hero section h1 {
   font-size: 3.125rem;
@@ -558,4 +566,9 @@ header #logo-container {
 #hero section #hero-card p {
   font-size: 0.875rem;
   margin-top: 10px;
+}
+#hero aside img {
+  width: 100%;
+  margin-top: -90px;
+  margin-left: 50px;
 }
