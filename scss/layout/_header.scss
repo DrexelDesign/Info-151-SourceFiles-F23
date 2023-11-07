@@ -1,3 +1,47 @@
 /* =============
     Header
 ============= */
+header{
+    padding: 12px 24px;
+    display: grid;
+    grid-template-columns: 50% auto 8%;
+    grid-template-areas: 
+    "logo search burger"
+    "nav nav nav";
+
+    #logo-container{
+        display: flex;
+        align-items: center;
+        grid-area: logo;
+    }
+
+    #search{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: search;
+        form{
+            button{
+                border: none;
+                background-color: transparent;
+            }
+
+            input{
+                display: none;
+            }
+        }
+    }
+
+    #burger-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: burger;
+    }
+
+    nav{
+        grid-area: nav;
+        // see navigation partial for scss
+        
+    }
+}

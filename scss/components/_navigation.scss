@@ -1,3 +1,50 @@
 /* =============
     Navigation
 ============= */
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    margin-top: 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--gray);
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+
+        li{
+            a:link, a:visited{
+                padding: 10px;
+                // border: 1px solid red;
+                display: inline-block;
+                margin-bottom: 12px;
+                color: var(--black);
+                transition: 0.25s;
+            }
+
+            a:hover, a:active{
+                color: var(--gray);
+            }
+
+            .loginSign-btn{
+                background-color: var(--black);
+                color: var(--white);
+                border-radius: 8px;
+                padding: 12px;
+                font-weight: 600;
+                border: none;
+                transition: 0.25s;
+                cursor: pointer;
+            }
+
+            .loginSign-btn:hover{
+                background-color: var(--gray);
+                color: var(--black);
+            }
+        }
+    }
+}
