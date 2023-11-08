@@ -13,6 +13,18 @@ header{
         grid-template-columns: 50% auto 4%;
     }
 
+    @include lg{
+        grid-template-columns: 20% auto 4%;
+    }
+
+    @include xl{
+        grid-template-columns: 15% auto 40%;
+        grid-template-areas: 
+        "logo search nav";
+
+        padding: 24px 48px;
+    }
+
     #logo-container{
         display: flex;
         align-items: center;
@@ -24,7 +36,22 @@ header{
         justify-content: flex-end;
         align-items: center;
         grid-area: search;
+        // border: 1px solid red;
+
+        @include xl{
+            justify-content: flex-start;
+        }
+
         form{
+
+            @include lg{
+                border: 1px solid var(--gray);
+                padding: 12px;
+                display: flex;
+                border-radius: 8px;
+                width: 80%;
+            }
+
             button{
                 border: none;
                 background-color: transparent;
@@ -32,6 +59,12 @@ header{
 
             input{
                 display: none;
+
+                @include lg{
+                    display: block;
+                    border: none;
+                    width: 80%;
+                }
             }
         }
     }
@@ -41,6 +74,10 @@ header{
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
+
+        @include xl{
+            display: none;
+        }
         
     }
 

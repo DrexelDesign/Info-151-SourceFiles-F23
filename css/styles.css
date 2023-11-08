@@ -393,9 +393,18 @@ a {
 }
 
 nav {
+  display: none;
   margin-top: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--gray);
+}
+@media (min-width: 1200px) {
+  nav {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+    display: block;
+  }
 }
 nav ul {
   display: -webkit-box;
@@ -409,6 +418,26 @@ nav ul {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+@media (min-width: 1200px) {
+  nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  nav ul li {
+    height: 100%;
+  }
+}
 nav ul li a:link, nav ul li a:visited {
   padding: 10px;
   display: inline-block;
@@ -416,6 +445,16 @@ nav ul li a:link, nav ul li a:visited {
   color: var(--black);
   -webkit-transition: 0.25s;
   transition: 0.25s;
+}
+@media (min-width: 1200px) {
+  nav ul li a:link, nav ul li a:visited {
+    height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 0px;
+    padding: 12px;
+    padding-bottom: 0;
+  }
 }
 nav ul li a:hover, nav ul li a:active {
   color: var(--gray);
@@ -433,7 +472,6 @@ nav ul li .loginSign-btn {
 }
 nav ul li .loginSign-btn:hover {
   background-color: var(--gray);
-  color: var(--black);
 }
 
 /* =============
@@ -451,6 +489,20 @@ header {
   header {
     -ms-grid-columns: 50% auto 4%;
     grid-template-columns: 50% auto 4%;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    -ms-grid-columns: 20% auto 4%;
+    grid-template-columns: 20% auto 4%;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    -ms-grid-columns: 15% auto 40%;
+    grid-template-columns: 15% auto 40%;
+        grid-template-areas: "logo search nav";
+    padding: 24px 48px;
   }
 }
 header #logo-container {
@@ -478,12 +530,37 @@ header #search {
           align-items: center;
   grid-area: search;
 }
+@media (min-width: 1200px) {
+  header #search {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  header #search form {
+    border: 1px solid var(--gray);
+    padding: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+    width: 80%;
+  }
+}
 header #search form button {
   border: none;
   background-color: transparent;
 }
 header #search form input {
   display: none;
+}
+@media (min-width: 1024px) {
+  header #search form input {
+    display: block;
+    border: none;
+    width: 80%;
+  }
 }
 header #burger-container {
   -ms-grid-row: 1;
@@ -499,11 +576,31 @@ header #burger-container {
           align-items: center;
   grid-area: burger;
 }
+@media (min-width: 1200px) {
+  header #burger-container {
+    display: none;
+  }
+}
 header nav {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: nav;
+}
+@media (min-width: 1200px) {
+  header #logo-container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header #search {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  header nav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
 }
 
 /* =============
