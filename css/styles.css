@@ -365,6 +365,14 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 /* =============
     Forms
 ============= */
@@ -388,25 +396,29 @@ textarea {
 /* =============
     Navigation
 ============= */
+.showMainNav {
+  display: block !important;
+}
+
 a {
   text-decoration: none;
 }
 
-nav {
+#mainNav {
   display: none;
   margin-top: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--gray);
 }
 @media (min-width: 1200px) {
-  nav {
+  #mainNav {
     border: none;
     margin-top: 0;
     padding-top: 0;
     display: block;
   }
 }
-nav ul {
+#mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,7 +431,7 @@ nav ul {
           align-items: flex-end;
 }
 @media (min-width: 1200px) {
-  nav ul {
+  #mainNav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -434,11 +446,11 @@ nav ul {
   }
 }
 @media (min-width: 1200px) {
-  nav ul li {
+  #mainNav ul li {
     height: 100%;
   }
 }
-nav ul li a:link, nav ul li a:visited {
+#mainNav ul li a:link, #mainNav ul li a:visited {
   padding: 10px;
   display: inline-block;
   margin-bottom: 12px;
@@ -447,7 +459,7 @@ nav ul li a:link, nav ul li a:visited {
   transition: 0.25s;
 }
 @media (min-width: 1200px) {
-  nav ul li a:link, nav ul li a:visited {
+  #mainNav ul li a:link, #mainNav ul li a:visited {
     height: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -456,10 +468,10 @@ nav ul li a:link, nav ul li a:visited {
     padding-bottom: 0;
   }
 }
-nav ul li a:hover, nav ul li a:active {
+#mainNav ul li a:hover, #mainNav ul li a:active {
   color: var(--gray);
 }
-nav ul li .loginSign-btn {
+#mainNav ul li .loginSign-btn {
   background-color: var(--black);
   color: var(--white);
   border-radius: 8px;
@@ -470,7 +482,7 @@ nav ul li .loginSign-btn {
   transition: 0.25s;
   cursor: pointer;
 }
-nav ul li .loginSign-btn:hover {
+#mainNav ul li .loginSign-btn:hover {
   background-color: var(--gray);
 }
 

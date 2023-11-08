@@ -2,11 +2,16 @@
     Navigation
 ============= */
 
+.showMainNav{
+    display: block !important;
+}
+
+
 a{
     text-decoration: none;
 }
 
-nav{
+#mainNav{
     // hide the nav on page load
     display: none;
     margin-top: 12px;
