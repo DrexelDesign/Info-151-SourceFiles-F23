@@ -9,6 +9,10 @@ header{
     "logo search burger"
     "nav nav nav";
 
+    @include md{
+        grid-template-columns: 50% auto 4%;
+    }
+
     #logo-container{
         display: flex;
         align-items: center;
@@ -37,6 +41,7 @@ header{
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
+        
     }
 
     nav{
